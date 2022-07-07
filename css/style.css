@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Orbitron", sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+section.title {
+  font-size: 64px;
+}
+
+section.title .letter-container {
+  position: fixed;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.title h1[data-letter="m"], section.title h1[data-letter="l"], section.title h1[data-letter="c"], section.title h1[data-letter="i"] {
+  padding-bottom: 20px;
+}
+
+section.title h1[data-letter="a1"], section.title h1[data-letter="a2"], section.title h1[data-letter="a3"] {
+  padding-top: 20px;
+}
+
+@-webkit-keyframes spreadm {
+  100% {
+    -webkit-transform: translate(-300px, 250px);
+            transform: translate(-300px, 250px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes spreadm {
+  100% {
+    -webkit-transform: translate(-300px, 250px);
+            transform: translate(-300px, 250px);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes spreada1 {
+  100% {
+    -webkit-transform: translate(-100px, -50px);
+            transform: translate(-100px, -50px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes spreada1 {
+  100% {
+    -webkit-transform: translate(-100px, -50px);
+            transform: translate(-100px, -50px);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes spreadl {
+  100% {
+    -webkit-transform: translate(-350px, -200px);
+            transform: translate(-350px, -200px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes spreadl {
+  100% {
+    -webkit-transform: translate(-350px, -200px);
+            transform: translate(-350px, -200px);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes spreada2 {
+  100% {
+    -webkit-transform: translate(250px, -100px);
+            transform: translate(250px, -100px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes spreada2 {
+  100% {
+    -webkit-transform: translate(250px, -100px);
+            transform: translate(250px, -100px);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes spreadc {
+  100% {
+    -webkit-transform: translate(100px, 150px);
+            transform: translate(100px, 150px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes spreadc {
+  100% {
+    -webkit-transform: translate(100px, 150px);
+            transform: translate(100px, 150px);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes spreada3 {
+  100% {
+    -webkit-transform: translate(-50px, -300px);
+            transform: translate(-50px, -300px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes spreada3 {
+  100% {
+    -webkit-transform: translate(-50px, -300px);
+            transform: translate(-50px, -300px);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes spreadi {
+  100% {
+    -webkit-transform: translate(300px, 10px);
+            transform: translate(300px, 10px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes spreadi {
+  100% {
+    -webkit-transform: translate(300px, 10px);
+            transform: translate(300px, 10px);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes goback {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes goback {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .letter-anim[data-letter="m"] {
+    -webkit-animation-name: spreadm;
+            animation-name: spreadm;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .letter-anim[data-letter="a1"] {
+    -webkit-animation-name: spreada1;
+            animation-name: spreada1;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .letter-anim[data-letter="l"] {
+    -webkit-animation-name: spreadl;
+            animation-name: spreadl;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .letter-anim[data-letter="a2"] {
+    -webkit-animation-name: spreada2;
+            animation-name: spreada2;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .letter-anim[data-letter="c"] {
+    -webkit-animation-name: spreadc;
+            animation-name: spreadc;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .letter-anim[data-letter="a3"] {
+    -webkit-animation-name: spreada3;
+            animation-name: spreada3;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .letter-anim[data-letter="i"] {
+    -webkit-animation-name: spreadi;
+            animation-name: spreadi;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+/*# sourceMappingURL=style.css.map */
